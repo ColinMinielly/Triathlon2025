@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triathlon 2025 Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #1e1e2e; color: #fff; text-align: center; margin: 0; }
+        h1 { color: #fdd835; }
+        .grid-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 20px auto; max-width: 1000px; }
+        .tile { background: #2e2e4e; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
+        .tile h3 { color: #a8d5ff; }
+        .tile p { color: #ffcc00; margin: 10px 0; }
+        .tile a { color: #93c5fd; text-decoration: none; font-weight: bold; }
+        .refresh-btn { margin-top: 30px; }
+        .refresh-btn button { padding: 10px 20px; background: #fdd835; color: #000; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; }
+        .last-updated { margin-top: 20px; font-size: 0.9em; color: #aaa; }
+        .quote-box { background: #44475a; font-style: italic; border-radius: 8px; padding: 10px; margin: 10px auto; }
+    </style>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>🚴‍♂️ Triathlon 2025 Dashboard</h1>
+
+    <!-- Countdown Widget -->
+    <div class="tile">
+        <h3>📆 Event Countdown</h3>
+        <iframe src="https://indify.co/widgets/live/countdown/wXWUtgphsGvS2DJ5sO3b" width="100%" height="100px" style="border: none;"></iframe>
+    </div>
+
+    <!-- Grid Layout -->
+    <div class="grid-container">
+        <!-- Weekly Activity -->
+        <div class="tile">
+            <h3>🚴‍♂️ Weekly Activity</h3>
+            <p>Track this week's progress</p>
+            <a href="https://www.notion.so/1e31e22ec7f54ba4afe3ce40542dd03a" target="_blank">View Weekly Activity →</a>
+        </div>
+
+        <!-- Hydration & Nutrition -->
+        <div class="tile">
+            <h3>💧 Hydration & Nutrition</h3>
+            <p>Water: <span id="waterConsumed">Loading...</span></p>
+            <p>Protein: <span id="proteinIntake">Loading...</span></p>
+            <a href="https://www.notion.so/a216cabe118a4e76b7dc621cbf9b7aa7" target="_blank">View Nutrition →</a>
+        </div>
+
+        <!-- Stress & Mood -->
+        <div class="tile">
+            <h3>🌿 Stress & Mood</h3>
+            <p id="stressLevel">Loading...</p>
+            <p id="mood">Loading...</p>
+            <a href="https://www.notion.so/3cd6b9f9163a4f03a5ebdff8b9b5489d" target="_blank">View Stress →</a>
+        </div>
+
+        <!-- Weekly Planning -->
+        <div class="tile">
+            <h3>📅 Weekly Planning</h3>
+            <p>Plan this week's goals</p>
+            <a href="https://www.notion.so/577ee291d07a4a4399bdf80451f2b257" target="_blank">View Weekly Plan →</a>
+        </div>
+    </div>
+
+    <!-- Motivational Quotes -->
+    <div class="quote-box">
+        "Don't watch the clock; do what it does. Keep going." - Sam Levenson
+    </div>
+
+    <!-- Reflection Journal Outside Table -->
+    <div class="tile" style="margin: 20px auto; max-width: 800px;">
+        <h3>📝 Reflection Journal</h3>
+        <p>Last Entry: <span id="reflectionDate">Loading...</span></p>
+        <a href="https://www.notion.so/Reflection_Journal" target="_blank">View Journal →</a>
+    </div>
+
+    <!-- Refresh Button -->
+    <div class="refresh-btn">
+        <button onclick="location.reload()">🔄 Refresh Dashboard</button>
+    </div>
+
+    <!-- Last Updated -->
+    <div class="last-updated">Last Updated: 2024-12-17 22:13:35</div>
+</body>
+</html>
