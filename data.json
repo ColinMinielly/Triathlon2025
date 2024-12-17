@@ -1,6 +1,11 @@
 
 {
+    "weeklyActivity": {
+        "totalCalories": 2491,
+        "topActivity": "Bike Ride"
+    },
     "hydration": {"waterConsumed": "2.5L", "proteinIntake": "130g"},
     "stressMood": {"stressLevel": 5, "mood": "Happy"},
-    "reflectionJournal": {"lastEntry": "2024-12-13"}
+    "reflectionJournal": {"lastEntry": "2024-12-13"},
+    "weightProgress": {"currentProgress": "50% toward Birthday Goal"}
 }
