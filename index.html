@@ -1,0 +1,54 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Triathlon Dashboard</title>
+        <style>
+            body { font-family: Arial, sans-serif; background: #1e1e2e; color: #fff; text-align: center; margin: 0; }
+            h1 { color: #fdd835; }
+            .section { margin: 20px auto; width: 90%; max-width: 800px; background: #2e2e4e; border-radius: 8px; padding: 15px; }
+            .progress-bar-container { margin: 15px 0; background: #444; border-radius: 8px; height: 20px; overflow: hidden; }
+            .progress-bar { background: #60a5fa; height: 100%; text-align: right; color: #fff; line-height: 20px; padding-right: 5px; }
+        </style>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <h1>🚴‍♂️ Triathlon 2025 Dashboard</h1>
+
+        <div class="section">
+            <h2>📆 Event Countdown</h2>
+            <p id="eventCountdown">Loading...</p>
+        </div>
+
+        <div class="section">
+            <h2>🏋️‍♂️ Weight Progress</h2>
+            <div id="weightGoal0">Loading...</div>
+            <div class="progress-bar-container"><div id="progressBar0" class="progress-bar"></div></div>
+            <div id="weightGoal1">Loading...</div>
+            <div class="progress-bar-container"><div id="progressBar1" class="progress-bar"></div></div>
+            <div id="weightGoal2">Loading...</div>
+            <div class="progress-bar-container"><div id="progressBar2" class="progress-bar"></div></div>
+        </div>
+
+        <div class="section">
+            <h2>💧 Hydration & Nutrition</h2>
+            <p>Water Consumed: <span id="waterConsumed">Loading...</span></p>
+            <p>Protein Intake: <span id="proteinIntake">Loading...</span></p>
+        </div>
+
+        <div class="section">
+            <h2>🌿 Stress & Mood</h2>
+            <p id="stressLevel">Loading...</p>
+            <p id="mood">Loading...</p>
+        </div>
+
+        <div class="section">
+            <h2>🚴‍♂️ Weekly Activity</h2>
+            <p id="caloriesBurned">Loading...</p>
+            <p id="mostActive">Loading...</p>
+        </div>
+    </body>
+    </html>
+    

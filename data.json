@@ -1,0 +1,13 @@
+
+    {
+        "eventCountdown": 239,
+        "weightProgress": [
+            {"goal": "Christmas Goal", "targetWeight": 330, "currentWeight": 365, "progress": 30},
+            {"goal": "Birthday Goal", "targetWeight": 300, "currentWeight": 365, "progress": 50},
+            {"goal": "Frank Dunn Goal", "targetWeight": 250, "currentWeight": 365, "progress": 0}
+        ],
+        "hydration": {"waterConsumed": "2.5L", "proteinIntake": "130g"},
+        "stressMood": {"stressLevel": 5, "mood": "Happy"},
+        "latestActivity": {"caloriesBurned": 2491, "mostActive": "Bike Ride"}
+    }
+    
